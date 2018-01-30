@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>vue基础 | Aribbit&#39;blog</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Aribbit'blog">
+    <meta name="author" content="whpersonal">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Aribbit&#39;blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">vue</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://github.com/whpersonal/" class="animsition-link">whpersonal</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Aribbit'blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/whpersonal/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-03-12T13:15:13.000Z" itemprop="datePublished">
+          2016-03-12
+      </time>
+    
+    
+    | 
+    <a href='/tags/vue/'>vue</a>
+    
+    
+</span>
+                <h1>vue基础</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="Vue中的动画"><a href="#Vue中的动画" class="headerlink" title="Vue中的动画"></a><a href="https://cn.vuejs.org/v2/guide/transitions.html" target="_blank" rel="noopener">Vue中的动画</a></h2><ul>
+<li>为什么要有动画：动画能够增加页面趣味性，目的是为了让用户更好的理解页面的功能；</li>
+<li>在Vue中的动画，不同于 CSS3中的动画；（在Vue中的动画，基本上都是过渡动画，过渡 left  top  角度）</li>
+</ul>
+<h3 id="Vue中动画的基本介绍"><a href="#Vue中动画的基本介绍" class="headerlink" title="Vue中动画的基本介绍"></a>Vue中动画的基本介绍</h3><ol>
+<li>每个都动画分为两部分（入场动画、出场动画）<ul>
+<li>入场就是：从不可见 =&gt; 可见</li>
+<li>出场就是：从可见 =&gt; 不可见</li>
+</ul>
+</li>
+<li>入场时候，Vue把这个动画，分成了两个时间点和一个时间段：<ul>
+<li>v-enter(入场之前的样式)</li>
+<li>v-enter-to(入场完成之后的样式)</li>
+<li>v-enter-active(入场的时间段，在这里，可以规定入场的动画效果、时间)</li>
+</ul>
+</li>
+<li>离场时候，Vue把动画，分成了两个时间点和一个时间段：<ul>
+<li>v-leave(离场之前的样式)</li>
+<li>v-leave-to(离场完成之后的样式)</li>
+<li>v-leave-active(离场的时间段，在这里，可以规定离场的动画效果、时间)</li>
+</ul>
+</li>
+</ol>
+<h3 id="使用过渡类名"><a href="#使用过渡类名" class="headerlink" title="使用过渡类名"></a>使用过渡类名</h3><ol>
+<li>把需要添加动画的元素，使用v-if或v-show进行控制</li>
+<li>把需要添加动画的元素，使用Vue提供的元素 <code>&lt;transition&gt;&lt;/transition&gt;</code> 包裹起来</li>
+<li>添加两组类：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.v-enter,</span><br><span class="line">.v-leave-to&#123;</span><br><span class="line">  opacity: 0;</span><br><span class="line">  transform: translateX(100px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.v-enter-active,</span><br><span class="line">.v-leave-active&#123;</span><br><span class="line">  transition: all 0.5s ease;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="使用第三方-CSS-动画库"><a href="#使用第三方-CSS-动画库" class="headerlink" title="使用第三方 CSS 动画库"></a><a href="https://cn.vuejs.org/v2/guide/transitions.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%BF%87%E6%B8%A1%E7%9A%84%E7%B1%BB%E5%90%8D" target="_blank" rel="noopener">使用第三方 CSS 动画库</a></h3><ol>
+<li>把需要添加动画的元素，使用v-if或v-show进行控制</li>
+<li>把需要添加动画的元素，使用Vue提供的元素 <code>&lt;transition&gt;&lt;/transition&gt;</code> 包裹起来</li>
+<li>为  <code>&lt;transition&gt;&lt;/transition&gt;</code>  添加两个属性类<code>enter-active-class</code>, <code>leave-active-class</code></li>
+<li>把需要添加动画的元素，添加一个 <code>class=&quot;animated&quot;</code></li>
+</ol>
+<h3 id="使用动画钩子函数"><a href="#使用动画钩子函数" class="headerlink" title="使用动画钩子函数"></a>使用动画钩子函数</h3><h3 id="v-for-的列表过渡"><a href="#v-for-的列表过渡" class="headerlink" title="v-for 的列表过渡"></a><a href="https://cn.vuejs.org/v2/guide/transitions.html#%E5%88%97%E8%A1%A8%E8%BF%87%E6%B8%A1" target="_blank" rel="noopener">v-for 的列表过渡</a></h3><h3 id="列表的排序过渡"><a href="#列表的排序过渡" class="headerlink" title="列表的排序过渡"></a>列表的排序过渡</h3><p><code>&lt;transition-group&gt;</code> 组件还有一个特殊之处。不仅可以进入和离开动画，<strong>还可以改变定位</strong>。要使用这个新功能只需了解新增的 <code>v-move</code> 特性，<strong>它会在元素的改变定位的过程中应用</strong>。</p>
+<ul>
+<li><code>v-move</code> 和 <code>v-leave-active</code> 结合使用，能够让列表的过渡更加平缓柔和：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.v-move&#123;</span><br><span class="line">  transition: all 0.8s ease;</span><br><span class="line">&#125;</span><br><span class="line">.v-leave-active&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="定义Vue组件"><a href="#定义Vue组件" class="headerlink" title="定义Vue组件"></a>定义Vue组件</h2><h3 id="模块化和组件化的概念解读"><a href="#模块化和组件化的概念解读" class="headerlink" title="模块化和组件化的概念解读"></a>模块化和组件化的概念解读</h3><ul>
+<li>什么是模块化：是从JS代码的角度进行分析的；模块化解决了文件之间的依赖关系；模块化就是根据指定的模块定义规范，来定义和使用模块的；<ul>
+<li>模块化的好处：方便了代码的维护和开发；只要你有了一个现成的模块，直接拿来用就行了，不用关心模块的内部是如何实现的</li>
+</ul>
+</li>
+<li>什么是组件化：使用UI的角度进行分析的；把一个完整的页面，分成了好多的小组件来实现，这样，随着项目的规模的扩大，你手里的组件会越来越多，后期再开发一个新页面的时候，直接把现有的组件拿来使用，就能快速组装出一个完整的页面；<ul>
+<li>组件化的好处：方便了UI代码的重用；提高了生产效率；</li>
+</ul>
+</li>
+</ul>
+<h3 id="定义全局组件"><a href="#定义全局组件" class="headerlink" title="定义全局组件"></a>定义全局组件</h3><ol>
+<li>定义组件的语法<ul>
+<li><code>Vue.component(&#39;组件的名称&#39;, { 组件的配置对象 })</code></li>
+</ul>
+</li>
+<li>使用组件的语法<ul>
+<li>把 <code>组件的名称</code>, 以标签的形式，引入到页面上就行；</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>注意： 从更抽象的角度来说，每个组件，就相当于是一个自定义的元素；<br>注意： 组件中的DOM结构，有且只能有唯一的根元素（Root Element）来进行包裹！</p>
+</blockquote>
+<h3 id="组件中定义data数据、methods方法以及生命周期函数"><a href="#组件中定义data数据、methods方法以及生命周期函数" class="headerlink" title="组件中定义data数据、methods方法以及生命周期函数"></a>组件中定义<code>data数据</code>、<code>methods方法</code>以及<code>生命周期函数</code></h3><p>组件和实例的相同和区别：</p>
+<ol>
+<li>组件通过 Vue.component() 函数创建出来的</li>
+<li>实例是通过  new Vue() 创建出来的</li>
+<li>创建组件和创建实例，都需要传递一个配置对象</li>
+<li>组件的配置对象，和实例的配置对象，最大的不同点，就是：组件的data 必须是一个函数并return 一个 对象；实例的 data 可以是 对象</li>
+</ol>
+<h3 id="【重点】为什么组件中的data属性必须定义为一个方法并返回一个对象"><a href="#【重点】为什么组件中的data属性必须定义为一个方法并返回一个对象" class="headerlink" title="【重点】为什么组件中的data属性必须定义为一个方法并返回一个对象"></a>【重点】为什么组件中的data属性必须定义为一个方法并返回一个对象</h3><ol>
+<li>通过计数器案例演示<br>总结： 因为这样，能够保证每次创建的组件实例，都有自己的一块唯一的数据内存，防止组件之间数据的干扰；</li>
+</ol>
+<h3 id="使用components属性定义私有子组件"><a href="#使用components属性定义私有子组件" class="headerlink" title="使用components属性定义私有子组件"></a>使用<code>components</code>属性定义私有子组件</h3><ul>
+<li>在实例上，通过 为实例的配置对象，提供 <code>components</code> 节点，来创建私有的子组件；</li>
+<li>在 <code>components</code> 节点中，可以创建许多的私有组件，这些组件 <code>键： 值</code> 形式存在的<ul>
+<li>其中，键表示组件的名称，将来，可以通过标签形式，引入到页面上展示；</li>
+<li>其中，值就是组件的配置对象；data(必须是函数并返回对象)  methods created….  template</li>
+</ul>
+</li>
+</ul>
+<h2 id="在Vue组件中data和props的区别"><a href="#在Vue组件中data和props的区别" class="headerlink" title="在Vue组件中data和props的区别"></a>在Vue组件中data和props的区别</h2><ol>
+<li>data: 存储组件私有数据的；而且data上的数据都是可读可写的；</li>
+<li>props: 是外界传递到组件中的数据；在 props 中接收的数据，不推荐直接修改；要保持props中数据的原装性；如果一定要为 props 上的属性重新赋值，则需要在 data 上重新定义和接收一下；<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(&apos;mycom&apos;, &#123;</span><br><span class="line">      template: `&lt;div&gt;</span><br><span class="line">        &lt;p @click=&quot;msg=&apos;data上的msg被修改了&apos;&quot;&gt;** 私有的 data 数据：&lt;/p&gt;</span><br><span class="line">        &lt;h3&gt;&#123;&#123; msg &#125;&#125;&lt;/h3&gt;</span><br><span class="line">        &lt;hr/&gt;</span><br><span class="line">        &lt;p @click=&quot;infoFromParent=&apos;props数据被修改了&apos;&quot;&gt;** 外界传递过来的 props 数据：&lt;/p&gt;</span><br><span class="line">        &lt;h3&gt;&#123;&#123; infoFromParent &#125;&#125;&lt;/h3&gt;</span><br><span class="line">      &lt;/div&gt;`,</span><br><span class="line">      data() &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">          msg: &apos;123&apos;,</span><br><span class="line">          infoFromParent: this.pinfo</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      props: [&apos;pinfo&apos;]</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/03/13/04-vue基础/" style="float: left;">
+        ← vue基础
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/03/03/01-Vue基础/">
+        vue基础 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By whpersonal. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/whpersonal/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

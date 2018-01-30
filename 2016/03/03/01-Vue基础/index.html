@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | Aribbit&#39;blog</title>
+  <title>vue基础 | Aribbit&#39;blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -166,105 +166,126 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子 都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/15/06-webpack02/">webpack</a></h4>
-                            
-                            <p><time datetime="2016-03-15T14:46:46.000Z"><a href="/2016/03/15/06-webpack02/">2016-03-15</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/13/05-webpack01/">webpack</a></h4>
-                            
-                            <p><time datetime="2016-03-13T04:46:46.000Z"><a href="/2016/03/13/05-webpack01/">2016-03-13</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/13/04-vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-13T02:46:46.000Z"><a href="/2016/03/13/04-vue基础/">2016-03-13</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/12/03-vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-12T13:15:13.000Z"><a href="/2016/03/12/03-vue基础/">2016-03-12</a></time></p>
-                        </div>
-                    
-                        
-                            </div><div class="row boxes">
-                            
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/03/01-Vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-03T02:46:46.000Z"><a href="/2016/03/03/01-Vue基础/">2016-03-03</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-03-03T02:46:46.000Z" itemprop="datePublished">
+          2016-03-03
+      </time>
+    
+    
+    | 
+    <a href='/tags/vue/'>vue</a>
+    
+    
+</span>
+                <h1>vue基础</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>这是一篇我在刚开始学习vue时的记录</p>
+<h3 id="什么是Vue-js"><a href="#什么是Vue-js" class="headerlink" title="什么是Vue.js"></a>什么是Vue.js</h3><ul>
+<li>Vue.js 是前端的<strong>主流框架之一</strong>，和Angular.js、React.js 一起，并成为前端三大主流框架！</li>
+<li>Vue.js 是一套构建用户界面的框架，<strong>只关注视图（页面）层</strong>，它不仅易于上手，还便于与第三方库或既有项目整合。</li>
+</ul>
+<h2 id="Vue指令之-插值表达式"><a href="#Vue指令之-插值表达式" class="headerlink" title="Vue指令之 插值表达式"></a>Vue指令之 <code>插值表达式</code></h2><ol>
+<li>基本使用演示</li>
+<li>在插值表达式中 使用简单的语句<h2 id="Vue指令之-v-cloak"><a href="#Vue指令之-v-cloak" class="headerlink" title="Vue指令之 v-cloak"></a>Vue指令之 <code>v-cloak</code></h2></li>
+<li>解决的问题<br>插值表达式有闪烁的问题（v-cloak 指令来解决闪烁问题）</li>
+<li>应用场景<br>当 网络比较卡的时候，我们可以为 最外层的 元素，添加 v-cloak ，防止用户看到 插值表达式</li>
+</ol>
+<h2 id="Vue指令之-v-text"><a href="#Vue指令之-v-text" class="headerlink" title="Vue指令之 v-text"></a>Vue指令之 <code>v-text</code></h2><ol>
+<li>基本使用<br>在 元素的属性节点上，添加<code>v-text</code>指令</li>
+<li>在<code>v-text</code>中 使用简单的语句</li>
+<li>和 插值表达式的两点区别和各自的应用场景<ul>
+<li>插值表达式只是一个占位符，但是，v-text会把内容区域之前的内容覆盖掉</li>
+<li>插值表达式有闪烁问题，但是，v-text不存在闪烁问题</li>
+<li>插值表达式适合在 前后追加一个元素的内容；</li>
+<li>如果 想要防止插值表达式闪烁问题，同时，没有其它内容，推荐使用 v-text</li>
+</ul>
+</li>
+</ol>
+<h2 id="Vue指令之-v-html"><a href="#Vue指令之-v-html" class="headerlink" title="Vue指令之 v-html"></a>Vue指令之 <code>v-html</code></h2><ol>
+<li>基本使用</li>
+<li>应用场景<ul>
+<li>当 服务器返回的数据中，包含的HTML的标签，此时，这些标签只能使用 v-html 来渲染；</li>
+</ul>
+</li>
+</ol>
+<h2 id="Vue指令之-v-bind"><a href="#Vue指令之-v-bind" class="headerlink" title="Vue指令之 v-bind"></a>Vue指令之 <code>v-bind</code></h2><ol>
+<li>基本使用<ul>
+<li>v-bind 是为 html 属性节点绑定数据的</li>
+</ul>
+</li>
+<li>应用场景<ul>
+<li>当 HTML 元素上，某些 属性的数据，需要从 Vue 身上的数据来填充的时候，大家需要把 对应的属性前面，添加 v-bind: 指令来修饰</li>
+<li>v-bind:    简写   : </li>
+</ul>
+</li>
+</ol>
+<h2 id="Vue指令之-v-on"><a href="#Vue指令之-v-on" class="headerlink" title="Vue指令之 v-on"></a>Vue指令之 <code>v-on</code></h2><ol>
+<li>基本使用： <ul>
+<li><code>&lt;input type=&quot;button&quot; value=&quot;按钮&quot; v-on:click=&quot;事件处理函数名&quot; /&gt;</code></li>
+<li><code>&lt;input type=&quot;button&quot; value=&quot;按钮&quot; @click=&quot;事件处理函数名&quot; /&gt;</code></li>
+<li>v-on 是为 HTML 元素，绑定 处理事件的；</li>
+<li>v-on:       简写  @</li>
+</ul>
+</li>
+</ol>
+<h2 id="Vue指令之v-for和key属性"><a href="#Vue指令之v-for和key属性" class="headerlink" title="Vue指令之v-for和key属性"></a>Vue指令之<code>v-for</code>和<code>key</code>属性</h2><ol>
+<li>迭代数组<ul>
+<li>普通数组（一般般）</li>
+<li>对象数组（用的最多）<br><code>(item, i) in objList</code></li>
+</ul>
+</li>
+<li>迭代对象中的属性（用的不多）</li>
+<li>迭代数字（几乎没人用）</li>
+</ol>
+<blockquote>
+<p>2.2.0+ 的版本里，<strong>当在组件中使用</strong> v-for 时，key 现在是必须的。</p>
+</blockquote>
+<ul>
+<li><p>当 Vue.js 用 v-for 正在更新已渲染过的元素列表时，它默认用 “<strong>就地复用</strong>” 策略。如果数据项的顺序被改变，Vue将<strong>不是移动 DOM 元素来匹配数据项的顺序</strong>， 而是<strong>简单复用此处每个元素</strong>，并且确保它在特定索引下显示已被渲染过的每个元素。</p>
+</li>
+<li><p>为了给 Vue 一个提示，<strong>以便它能跟踪每个节点的身份，从而重用和重新排序现有元素</strong>，你需要为每项提供一个唯一 key 属性。</p>
+</li>
+</ul>
+<h2 id="Vue指令之v-if和v-show"><a href="#Vue指令之v-if和v-show" class="headerlink" title="Vue指令之v-if和v-show"></a>Vue指令之<code>v-if</code>和<code>v-show</code></h2><ul>
+<li>v-if 和 v-show 的作用，都是切换界面上元素的显示或隐藏的；</li>
+</ul>
+<blockquote>
+<p>一般来说，v-if 有更高的<strong>切换消耗</strong> 而  v-show 有更高的<strong>初始渲染消耗</strong>。</p>
+<p>因此，如果需要频繁切换 v-show 较好，如果在运行时条件不大可能改变 v-if 较好。</p>
+</blockquote>
+<h2 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h2><p>概念：Vue.js 允许自定义过滤器，<strong>可被用作一些常见的文本格式化</strong>。过滤器可以用在两个地方：<strong>mustache 插值和 v-bind 表达式</strong>。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符指示；</p>
+<h3 id="全局过滤器"><a href="#全局过滤器" class="headerlink" title="全局过滤器"></a>全局过滤器</h3><h3 id="私有过滤器"><a href="#私有过滤器" class="headerlink" title="私有过滤器"></a>私有过滤器</h3><blockquote>
+<p>使用ES6中的字符串新方法 String.prototype.padStart(maxLength, fillString=’’) 或 String.prototype.padEnd(maxLength, fillString=’’)来填充字符串；</p>
+<p>注意过滤器查找顺序问题：</p>
+</blockquote>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>兔小姐的后花园</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/03/12/03-vue基础/" style="float: left;">
+        ← vue基础
+    </a>
+    
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 

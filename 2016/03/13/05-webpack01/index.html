@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives | Aribbit&#39;blog</title>
+  <title>webpack | Aribbit&#39;blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -166,105 +166,97 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子 都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/15/06-webpack02/">webpack</a></h4>
-                            
-                            <p><time datetime="2016-03-15T14:46:46.000Z"><a href="/2016/03/15/06-webpack02/">2016-03-15</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/13/05-webpack01/">webpack</a></h4>
-                            
-                            <p><time datetime="2016-03-13T04:46:46.000Z"><a href="/2016/03/13/05-webpack01/">2016-03-13</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/13/04-vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-13T02:46:46.000Z"><a href="/2016/03/13/04-vue基础/">2016-03-13</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/12/03-vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-12T13:15:13.000Z"><a href="/2016/03/12/03-vue基础/">2016-03-12</a></time></p>
-                        </div>
-                    
-                        
-                            </div><div class="row boxes">
-                            
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/03/01-Vue基础/">vue基础</a></h4>
-                            
-                            <p><time datetime="2016-03-03T02:46:46.000Z"><a href="/2016/03/03/01-Vue基础/">2016-03-03</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-03-13T04:46:46.000Z" itemprop="datePublished">
+          2016-03-13
+      </time>
+    
+    
+    | 
+    <a href='/tags/webpack/'>webpack</a>
+    
+    
+</span>
+                <h1>webpack</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="在网页中会引用哪些常见的静态资源？"><a href="#在网页中会引用哪些常见的静态资源？" class="headerlink" title="在网页中会引用哪些常见的静态资源？"></a>在网页中会引用哪些常见的静态资源？</h2><ul>
+<li>样式表<ul>
+<li>.css    .less     .scss</li>
+</ul>
+</li>
+<li>JS文件<ul>
+<li>.js    .ts(angular2 - angular5)    .coffee</li>
+</ul>
+</li>
+<li>图片<ul>
+<li>.jpg    .png     .gif     .bmp</li>
+</ul>
+</li>
+<li>字体文件<ul>
+<li>.eot    .ttf    .svg     .woff    .woff2</li>
+</ul>
+</li>
+<li>模板文件<ul>
+<li>.ejs    .jade    .vue（这个模板文件，是 组件的模板文件）</li>
+</ul>
+</li>
+</ul>
+<h2 id="网页中引入的静态资源多了以后有什么问题？？？"><a href="#网页中引入的静态资源多了以后有什么问题？？？" class="headerlink" title="网页中引入的静态资源多了以后有什么问题？？？"></a>网页中引入的静态资源多了以后有什么问题？？？</h2><ol>
+<li>会发起很多的二次请求；因此，二次请求多了以后，会拖慢网页加载速度；（对网页性能不友好）</li>
+<li>程序员要自己处理文件之间错综复杂的依赖关系；（对程序开发不友好）</li>
+</ol>
+<h2 id="如何解决上述两个问题"><a href="#如何解决上述两个问题" class="headerlink" title="如何解决上述两个问题"></a>如何解决上述两个问题</h2><ol>
+<li>css, js 合并文件；压缩</li>
+<li>图片： 精灵图、base64</li>
+<li>我们可以使用一些现有的构建工具，让工具帮我们解决文件之间的前后依赖关系；</li>
+</ol>
+<h2 id="什么是webpack"><a href="#什么是webpack" class="headerlink" title="什么是webpack?"></a>什么是webpack?</h2><ul>
+<li>webpack 是前端项目的构建工具，将来，我们开发的项目，如果想要提高维护性和可控性的话，尽量选择 webpack 进行构建；</li>
+<li>webpack 非常适合与单页面应用程序结合使用；不太适合与多页面的普通网站结合使用；</li>
+<li>项目中使用 webpack 有什么好处：<ul>
+<li>能够处理静态资源的 依赖关系；</li>
+<li>能够优化项目代码，比如：压缩合并文件，把图片转为base64编码格式；</li>
+<li>能够把高级的语法转为低级的语法；</li>
+<li>webpack 能够转换一些模板文件； .vue</li>
+</ul>
+</li>
+<li>为什么要使用webpack: 1. 这个工具自动处理文件依赖关系； 2. 优化项目代码； 3. 解决JS代码兼容性问题  4. 能够转换浏览器不识别的文件；</li>
+<li>根据官网的图片介绍webpack打包的过程</li>
+<li><a href="http://webpack.github.io/" target="_blank" rel="noopener">webpack官网</a></li>
+</ul>
+<h2 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h2><p><a href="https://segmentfault.com/p/1210000008466178" target="_blank" rel="noopener">babel-preset-env：你需要的唯一Babel插件</a><br><a href="https://segmentfault.com/a/1190000009065987" target="_blank" rel="noopener">Runtime transform 运行时编译es6</a></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>兔小姐的后花园</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/03/15/06-webpack02/" style="float: left;">
+        ← webpack
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/03/13/04-vue基础/">
+        vue基础 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
